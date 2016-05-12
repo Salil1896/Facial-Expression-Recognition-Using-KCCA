@@ -7,6 +7,7 @@ function[ytest] = k_cca(trainx,trainy,testx,testy)
 %outputs are the projection of x and y 
 % b is the correlation
 %al1 and al2 are alpha1 and aplha2
+% edit km_kcca to also return alpha1 and alpha2
 
 [x1,y1,b,al1,al2] = km_kcca(trainx,trainy,'gauss',1.9,.03,7);
 
